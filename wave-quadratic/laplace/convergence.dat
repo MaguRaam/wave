@@ -1,0 +1,9 @@
+N = 3.20000e+01  Linfty error = 1.26458e+01  L2 error = 7.18647e+00
+N = 6.40000e+01  Linfty error = 6.76070e+00  L2 error = 2.40516e+00
+N = 1.28000e+02  Linfty error = 3.51702e+00  L2 error = 8.12048e-01
+N = 2.56000e+02  Linfty error = 1.77982e+00  L2 error = 2.82770e-01
+Rate of convergence
+
+N = 6.40000e+01  Linfty rate = 9.03410e-01  L2 rate = 1.57915e+00
+N = 1.28000e+02  Linfty rate = 9.42821e-01  L2 rate = 1.56650e+00
+N = 2.56000e+02  Linfty rate = 9.82622e-01  L2 rate = 1.52194e+00

@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "vector": "cpp"
+    },
+    "cmake.configureSettings": {
+        "DEAL_II_DIR": "/home/magu/deal.ii-candi/deal.II-v9.2.0"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}

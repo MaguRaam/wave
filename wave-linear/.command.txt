@@ -1,0 +1,16 @@
+# login to cray account
+ssh computational_id@sahasrat.serc.iisc.ernet.in
+
+# to compile and run deal.ii code on cray
+module load /mnt/lustre/new_apps/cle7/dealii/9.0.0/modulefiles/gcc/8.3.0
+
+# job related command
+qsub job_script_file // submit job
+qstat -a 			 // list the status of all job
+qstat -a | grep mec			 
+qhold job_id         // hold the job
+qrls job_id         // release the job
+qdel 34157          //kill the job
+
+# copy command
+ scp -r mecmagur@sahasrat.serc.iisc.ernet.in:/mnt/lustre/mec3/mecmagur/magu/ /home/magu/Desktop/
