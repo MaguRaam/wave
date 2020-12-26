@@ -1,0 +1,10 @@
+/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/CMakeFiles/edit_cache.dir
+/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/CMakeFiles/rebuild_cache.dir
+/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/CMakeFiles/info.dir
+/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/CMakeFiles/strip_comments.dir
+/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/CMakeFiles/distclean.dir
+/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/CMakeFiles/runclean.dir
+/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/CMakeFiles/debug.dir
+/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/CMakeFiles/weno4_wave_2d.dir
+/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/CMakeFiles/run.dir
+/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/CMakeFiles/release.dir

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>weno4_wave_2d-Debug@periodic-wave-weno4-2d</name>
+	<comment></comment>
+	<projects></projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.makeBuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableCleanBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.append_environment</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.stopOnError</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enabledIncrementalBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.command</key>
+					<value>/usr/bin/make</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.contents</key>
+					<value>org.eclipse.cdt.make.core.activeConfigSettings</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.inc</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.arguments</key>
+					<value>-j8</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildLocation</key>
+					<value>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.environment</key>
+					<value>VERBOSE=1|CMAKE_NO_VERBOSE=1|</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableFullBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.auto</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableAutoBuild</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.target.clean</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.fullBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.buildArguments</key>
+					<value></value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.location</key>
+					<value>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
+					<value>all</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.core.errorOutputParser</key>
+					<value>org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser;</value>
+				</dictionary>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.make.core.ScannerConfigBuilder</name>
+			<arguments/>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.make.core.makeNature</nature>
+		<nature>org.eclipse.cdt.make.core.ScannerConfigNature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>[Subprojects]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/L_norm.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/L_norm.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/cell_properties.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/cell_properties.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/cls.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/cls.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/compute_cell_properties.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/compute_cell_properties.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/compute_reconstruction_matrices.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/compute_reconstruction_matrices.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/compute_rhs.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/compute_rhs.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/compute_smoothness_indicators.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/compute_smoothness_indicators.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/compute_time_step.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/compute_time_step.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/compute_weno_constants.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/compute_weno_constants.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/constructor.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/constructor.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/copy_data.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/copy_data.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/evaluate_weno_gradient_x.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/evaluate_weno_gradient_x.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/evaluate_weno_gradient_y.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/evaluate_weno_gradient_y.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/exact_solution.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/exact_solution.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/gradient_flux.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/gradient_flux.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/initial_condition.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/initial_condition.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/initialize.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/initialize.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/lu.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/lu.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/main.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/main.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/make_grid.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/make_grid.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/output_results.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/output_results.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/reconstruct.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/reconstruct.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/run.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/run.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/setup_system.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/setup_system.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/smoothness_indicator_constants.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/smoothness_indicator_constants.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/solve_euler.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/solve_euler.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Source Files/solve_ssprk33.cc</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/source/solve_ssprk33.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Header Files/CLS.h</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/include/CLS.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Header Files/Headers.h</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/include/Headers.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Header Files/LU.h</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/include/LU.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Header Files/Weno432.h</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/include/Weno432.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Header Files/cell_properties.h</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/include/cell_properties.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Header Files/gradient_flux.h</name>
+			<type>1</type>
+			<location>/home/ratnesh/Desktop/wave_old/periodic-wave-weno4-2d/include/gradient_flux.h</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Precompile Header File</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] weno4_wave_2d/Object Libraries</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

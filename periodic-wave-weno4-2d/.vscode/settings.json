@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.tex": "bibtex",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "algorithm": "cpp",
+        "random": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+}
