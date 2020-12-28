@@ -6,13 +6,12 @@ int main()
 	std::cout.flags(std::ios::dec | std::ios::scientific);
 	std::cout.precision(6);
 
-	unsigned int cell = 128;
+	unsigned int cell = 256;
 
-	double finalTime = 5.0;
 	double cfl = 0.5;
 
 	//plane wave parameters:
-	const double lambda(1.0);							 //wave length
+	const double lambda(4.0);							 //wave length
 	const double k(2.0 * M_PI / lambda);				 //wave number
 	const double alpha(0.0);							 //wave propagation angle in radians
 	const double kx(k * cos(alpha)), ky(k * sin(alpha)); //wave number x and y components:
@@ -22,6 +21,7 @@ int main()
 	const double c(omega / k);
 	std::cout<<"wave speed = "<<c<<std::endl;
 
+	double finalTime = T;
 	Weno4_2D test_problem(finalTime, cfl, cell, kx, ky, omega, c);
 	test_problem.run();
 
