@@ -35,9 +35,11 @@ class Weno4_2D
     void L_norm(const double);
     void solve_euler();
     void solve_ssprk33();
+    void solve_ssprk54();
     void output_results(unsigned int);
 
-    double initial_condition(Point<2>);
+    double initial_condition_u(Point<2>);
+    double initial_condition_v(Point<2>);
     double exact_solution(Point<2>, double);
 
     Triangulation<2> triangulation;

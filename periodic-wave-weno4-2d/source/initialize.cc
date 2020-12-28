@@ -38,14 +38,14 @@ void Weno4_2D::initialize() {
             }
 
             U(c) = 0.0;
-             
+            V(c) = 0.0; 
 
             for (unsigned int i = 0; i < N_gp*N_gp; i++) {
 
                 q_point = fv_values.quadrature_point(i);
 
-				U(c)   += (1./V0)*fv_values.JxW (i)*initial_condition(q_point);
-                 
+				U(c)   += (1./V0)*fv_values.JxW (i)*initial_condition_u(q_point);
+                V(c)   += (1./V0)*fv_values.JxW (i)*initial_condition_v(q_point);  
             }
         }
     }
