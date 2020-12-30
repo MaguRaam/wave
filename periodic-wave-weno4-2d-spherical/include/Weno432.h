@@ -100,13 +100,13 @@ class Weno4_2D
     unsigned int cell;
 
     //wave parameters:
-    double k, lambda, omega, C;
+    double C;
 
     FE_DGQ<2> fv;
     DoFHandler<2> dof_handler;
 
 public:
-    Weno4_2D(double, double, unsigned int, double, double, double, double);
+    Weno4_2D(double, double, unsigned int, double);
     void run();
 };
 
