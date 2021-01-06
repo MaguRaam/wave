@@ -38,11 +38,6 @@ void Weno4_2D::solve_ssprk54()
             copy_data();
         }
 
-        if (count % output_count == 0)
-        {
-            output_results(count);
-        }
-
         time += dt;
 
         std::cout << "time = " << time << ", Final time = " << finalTime << std::endl;
@@ -128,8 +123,6 @@ void Weno4_2D::solve_ssprk54()
             }
         }
         L_norm(time);
-        
-       if (count % 10 == 0)  output_results(count);
-    }
-
+        }
+        output_results(count);
 }

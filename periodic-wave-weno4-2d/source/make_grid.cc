@@ -109,8 +109,8 @@ void Weno4_2D::make_grid() {
     GridGenerator::merge_triangulations (triangulation3, triangulation, triangulation);
     GridGenerator::merge_triangulations (triangulation7, triangulation, triangulation);
     GridGenerator::merge_triangulations (triangulation0, triangulation, triangulation);
-    
-    //GridTools::transform(grid_transform,triangulation);
+
+    GridTools::transform(grid_transform, triangulation);
 
     no_cells_per_block = repetions[0]*repetions[1]; 
 
