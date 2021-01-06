@@ -14,7 +14,10 @@ void Weno4_2D::run() {
 	initialize();
 	precompute_matrices(); 
     compute_IS_constants(); 
-    solve_ssprk54(); 
+	//copy_data();
+	//L_norm(0);
+	//output_results(1);
+	solve_ssprk54(); 
    	 
     
     auto end = std::chrono::system_clock::now();

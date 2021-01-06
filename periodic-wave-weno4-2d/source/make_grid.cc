@@ -1,6 +1,8 @@
 #include "../include/Weno432.h"
 
-// Make the grid
+ 
+
+
 
 void Weno4_2D::make_grid() {
 
@@ -31,7 +33,7 @@ void Weno4_2D::make_grid() {
     Triangulation<2> triangulation1;
     GridGenerator::subdivided_hyper_rectangle(triangulation1, repetions, P1, P2, colorize);
     //GridTools::distort_random (0.15, triangulation1, true);
-//    GridTools::shift (Point<2>(-4.0, 0.0), triangulation1);
+    //GridTools::shift (Point<2>(-4.0, 0.0), triangulation1);
     
     /* Right center */ 
     P1(0) = 2.0; P1(1) =-2.0;
@@ -39,7 +41,7 @@ void Weno4_2D::make_grid() {
     Triangulation<2> triangulation2;
     GridGenerator::subdivided_hyper_rectangle(triangulation2, repetions, P1, P2, colorize);
     //GridTools::distort_random (0.15, triangulation2, true);
-//    GridTools::shift (Point<2>(4.0, 0.0), triangulation2);
+    //GridTools::shift (Point<2>(4.0, 0.0), triangulation2);
     
     /* Bottom center */ 
     P1(0) = -2.0; P1(1) =-6.0;
@@ -47,7 +49,7 @@ void Weno4_2D::make_grid() {
     Triangulation<2> triangulation3;
     GridGenerator::subdivided_hyper_rectangle(triangulation3, repetions, P1, P2, colorize);
     //GridTools::distort_random (0.15, triangulation3, true);
-//    GridTools::shift (Point<2>(0.0, -4.0), triangulation3);
+    //GridTools::shift (Point<2>(0.0, -4.0), triangulation3);
     
     /* Top center */ 
     P1(0) = -2.0; P1(1) =2.0;
@@ -55,7 +57,7 @@ void Weno4_2D::make_grid() {
     Triangulation<2> triangulation4;
     GridGenerator::subdivided_hyper_rectangle(triangulation4, repetions, P1, P2, colorize);
     //GridTools::distort_random (0.15, triangulation4, true);
-//    GridTools::shift (Point<2>(0.0, 4.0), triangulation4);
+    //GridTools::shift (Point<2>(0.0, 4.0), triangulation4);
     
     /* Top Left */ 
     P1(0) = -6.0; P1(1) = 2.0;
@@ -63,7 +65,7 @@ void Weno4_2D::make_grid() {
     Triangulation<2> triangulation5;
     GridGenerator::subdivided_hyper_rectangle(triangulation5, repetions, P1, P2, colorize);
     //GridTools::distort_random (0.15, triangulation5, true);
-//    GridTools::shift (Point<2>(-4.0, 4.0), triangulation5);
+    //GridTools::shift (Point<2>(-4.0, 4.0), triangulation5);
     
     /* Top Right */ 
     P1(0) = 2.0; P1(1) = 2.0;
@@ -71,7 +73,7 @@ void Weno4_2D::make_grid() {
     Triangulation<2> triangulation6;
     GridGenerator::subdivided_hyper_rectangle(triangulation6, repetions, P1, P2, colorize);
     //GridTools::distort_random (0.15, triangulation6, true);
-//    GridTools::shift (Point<2>(4.0, 4.0), triangulation6);
+    //GridTools::shift (Point<2>(4.0, 4.0), triangulation6);
     
     /* Bottom Leftt */
     P1(0) = -6.0; P1(1) =-6.0;
@@ -79,7 +81,7 @@ void Weno4_2D::make_grid() {
     Triangulation<2> triangulation7;
     GridGenerator::subdivided_hyper_rectangle(triangulation7, repetions, P1, P2, colorize);
     //GridTools::distort_random (0.15, triangulation7, true);
-//    GridTools::shift (Point<2>(-4.0, -4.0), triangulation7);
+    //GridTools::shift (Point<2>(-4.0, -4.0), triangulation7);
     
     /* Bottom Right */
     P1(0) = 2.0; P1(1) =-6.0;
@@ -87,8 +89,16 @@ void Weno4_2D::make_grid() {
     Triangulation<2> triangulation8;
     GridGenerator::subdivided_hyper_rectangle(triangulation8, repetions, P1, P2, colorize);
     //GridTools::distort_random (0.15, triangulation8, true);
-//    GridTools::shift (Point<2>(4.0, -4.0), triangulation8); 
+    //GridTools::shift (Point<2>(4.0, -4.0), triangulation8); 
    
+
+    auto grid_transform = [](const Point<2>& in)
+    {
+    Point<2> in_star(in(0),in(1)+0.4*std::sin(2.0*in(0)*M_PI/4.0));
+    Point<2> out(in_star(0)+0.3*std::sin(2.0*in_star(1)*M_PI/4.0),in_star(1));
+    return out;
+    };
+
     /* Merge all of them */ 
     
     GridGenerator::merge_triangulations (triangulation4, triangulation6, triangulation);
@@ -100,6 +110,8 @@ void Weno4_2D::make_grid() {
     GridGenerator::merge_triangulations (triangulation7, triangulation, triangulation);
     GridGenerator::merge_triangulations (triangulation0, triangulation, triangulation);
     
+    //GridTools::transform(grid_transform,triangulation);
+
     no_cells_per_block = repetions[0]*repetions[1]; 
 
 	Triangulation<2>::active_cell_iterator  cell = triangulation.begin_active(), 

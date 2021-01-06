@@ -6,15 +6,15 @@ int main()
 	std::cout.flags(std::ios::dec | std::ios::scientific);
 	std::cout.precision(6);
 
-	unsigned int cell = 256;
+	unsigned int cell = 64;
 
 	double cfl = 0.5;
 
 	//plane wave parameters:
 	const double lambda(4.0);							 //wave length
 	const double k(2.0 * M_PI / lambda);				 //wave number
-	const double alpha(0.0);							 //wave propagation angle in radians
-	const double kx(k * cos(alpha)), ky(k * sin(alpha)); //wave number x and y components:
+
+	const double kx(k), ky(k); //wave number x and y components:
 	const double T(1.0), omega(2.0 * M_PI / T);			 //time period and angular frequency:
 
 	//dispersion relation to compute wave speed:

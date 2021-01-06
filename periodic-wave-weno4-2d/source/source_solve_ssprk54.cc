@@ -128,7 +128,8 @@ void Weno4_2D::solve_ssprk54()
             }
         }
         L_norm(time);
+        
+       if (count % 10 == 0)  output_results(count);
     }
 
-    //output_results(count);
 }

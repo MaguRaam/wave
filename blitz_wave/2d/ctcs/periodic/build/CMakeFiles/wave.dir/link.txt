@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/wave.dir/wave_periodic.cc.o -o wave  -lblitz 
