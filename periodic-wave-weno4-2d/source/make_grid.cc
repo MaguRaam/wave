@@ -94,9 +94,7 @@ void Weno4_2D::make_grid() {
 
     auto grid_transform = [](const Point<2>& in)
     {
-    Point<2> in_star(in(0),in(1)+0.4*std::sin(2.0*in(0)*M_PI/4.0));
-    Point<2> out(in_star(0)+0.3*std::sin(2.0*in_star(1)*M_PI/4.0),in_star(1));
-    return out;
+     return Point<2>(in(0) + 0.3*std::sin(2.0*in(1)*M_PI/4.0),in(1)+0.4*std::sin(2.0*in(0)*M_PI/4.0));
     };
 
     /* Merge all of them */ 

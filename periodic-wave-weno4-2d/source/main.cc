@@ -6,7 +6,7 @@ int main()
 	std::cout.flags(std::ios::dec | std::ios::scientific);
 	std::cout.precision(6);
 
-	unsigned int cell = 256;
+	unsigned int cell = 64;
 
 	double cfl = 0.5;
 

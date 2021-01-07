@@ -123,6 +123,7 @@ void Weno4_2D::solve_ssprk54()
             }
         }
         L_norm(time);
-        }
         output_results(count);
+        }
+        
 }
